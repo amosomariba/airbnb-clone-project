@@ -67,3 +67,31 @@ Set up automated CI/CD pipelines to ensure smooth development workflows and mini
 - **Deployment & Automation:** Docker, GitHub Actions
 - **Documentation:** Markdown
 
+## 👥 Team Roles
+
+A successful project relies on the clear definition and execution of various team roles. Below are the primary roles involved in the Airbnb Clone Project and their responsibilities:
+
+###  Backend Developer
+- **Responsibilities:** Designs and implements server-side logic, API endpoints, and core application functionality. Ensures data flows correctly between the database and frontend through secure and efficient APIs.
+- **Key Skills:** Django, Python, REST/GraphQL, API security.
+
+###  Database Administrator (DBA)
+- **Responsibilities:** Plans, creates, and manages the relational database structure. Ensures data integrity, optimizes queries, and handles backups and migrations.
+- **Key Skills:** MySQL, database normalization, performance tuning.
+
+###  QA Engineer / Tester
+- **Responsibilities:** Writes and executes test cases to ensure that the application functions as expected. Focuses on bug detection, user flow validation, and regression testing.
+- **Key Skills:** Automated testing tools, unit testing, CI testing integration.
+
+###  DevOps / CI/CD Engineer
+- **Responsibilities:** Automates the deployment process using CI/CD pipelines. Manages infrastructure, monitors deployments, and ensures smooth integration of new code.
+- **Key Skills:** GitHub Actions, Docker, container orchestration, monitoring tools.
+
+###  Technical Writer / Documentation Lead
+- **Responsibilities:** Creates and maintains project documentation including README files, API documentation, and technical specs. Helps ensure that the codebase and processes are well understood.
+- **Key Skills:** Markdown, API specs, collaborative documentation tools.
+
+###  Project Manager / Team Lead
+- **Responsibilities:** Coordinates project tasks, manages timelines, and ensures the team stays on track. Facilitates communication among team members and monitors progress.
+- **Key Skills:** Agile/Scrum methodologies, communication, scheduling.
+
