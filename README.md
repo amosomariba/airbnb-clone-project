@@ -235,6 +235,41 @@ Automated workflows using GitHub Actions or similar tools handle testing, buildi
 
 
 
+## API Security
+
+Securing the backend APIs is critical to ensure the integrity, privacy, and reliability of the Airbnb Clone platform. Below are the key security measures that will be implemented, along with the reasons they are vital for different parts of the project.
+
+### Authentication
+**Description:** Users must verify their identity using secure login credentials (e.g., email and password). Authentication tokens (e.g., JWT) will be used to validate sessions for API requests.
+**Importance:** Protects user accounts and prevents unauthorized access to sensitive data and actions like bookings or payments.
+
+### Authorization
+**Description:** After authentication, the system checks whether a user has permission to perform certain actions (e.g., only property owners can modify their listings).
+**Importance:** Ensures that users can only access or modify resources they own, maintaining data privacy and operational integrity.
+
+### Rate Limiting
+**Description:** Controls the number of API requests allowed per user or IP over a period of time.
+**Importance:** Prevents abuse such as brute force login attempts and protects the system from denial-of-service (DoS) attacks.
+
+### Input Validation & Sanitization
+**Description:** All user inputs are validated and sanitized to prevent injection attacks (e.g., SQL injection, XSS).
+**Importance:** Ensures that malicious data cannot compromise the database or front-end rendering.
+
+### Password Hashing
+**Description:** User passwords are hashed using algorithms like bcrypt before being stored in the database.
+**Importance:** Even if the database is compromised, hashed passwords cannot be easily reversed, reducing the risk of identity theft.
+
+### Secure Payment Handling
+**Description:** Payment information is never stored directly. Instead, secure third-party gateways (e.g., Stripe, PayPal) are used for transactions.
+**Importance:** Protects sensitive financial data and ensures compliance with security standards such as PCI-DSS.
+
+### HTTPS Enforcement (in production)
+**Description:** All communications between client and server are encrypted using SSL/TLS.
+**Importance:** Prevents man-in-the-middle attacks and keeps user data safe during transmission.
+
+
+
+
 
 
 
