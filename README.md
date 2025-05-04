@@ -123,3 +123,84 @@ This project utilizes a modern and scalable technology stack to simulate a full-
 - **Purpose:** A lightweight markup language used for creating project documentation files such as `README.md`, enabling clear and readable formatting.
 
 
+
+##  Database Design
+
+The database is designed to reflect the real-world structure of a booking platform like Airbnb. Below are the key entities, their important fields, and how they relate to each other.
+
+###  Users
+**Description:** Represents individuals who can either host properties or make bookings.
+**Key Fields:**
+- `id`: Unique identifier
+- `name`: Full name of the user
+- `email`: User’s email address (unique)
+- `password`: Encrypted password for authentication
+- `role`: Specifies whether the user is a host, guest, or both
+
+###  Properties
+**Description:** Listings created by hosts that can be booked by guests.
+**Key Fields:**
+- `id`: Unique property identifier
+- `title`: Name or title of the property
+- `description`: Detailed information about the property
+- `location`: Geographic location (city, country, etc.)
+- `price_per_night`: Cost to rent per night
+
+**Relationship:**  
+- A user (host) can have multiple properties.
+- Each property is owned by one user.
+
+###  Bookings
+**Description:** Records of reservations made by users for properties.
+**Key Fields:**
+- `id`: Unique booking identifier
+- `user_id`: ID of the user making the booking
+- `property_id`: ID of the property being booked
+- `start_date`: Date when the booking begins
+- `end_date`: Date when the booking ends
+
+**Relationship:**  
+- A user can make multiple bookings.
+- A booking belongs to one user and one property.
+
+###  Reviews
+**Description:** Feedback provided by users after their stay at a property.
+**Key Fields:**
+- `id`: Unique review identifier
+- `user_id`: ID of the reviewer
+- `property_id`: ID of the reviewed property
+- `rating`: Score (e.g., 1 to 5)
+- `comment`: Text review of the experience
+
+**Relationship:**  
+- A user can write multiple reviews.
+- Each review belongs to one user and one property.
+
+###  Payments
+**Description:** Records of completed transactions for bookings.
+**Key Fields:**
+- `id`: Unique payment identifier
+- `booking_id`: ID of the associated booking
+- `amount`: Total payment amount
+- `payment_date`: Date the payment was made
+- `payment_method`: Method used (e.g., credit card, PayPal)
+
+**Relationship:**  
+- Each booking has one associated payment.
+- A payment is linked to a single booking.
+
+---
+
+###  Entity Relationships Summary
+
+- One **User**  Many **Properties**
+- One **User**  Many **Bookings**
+- One **User**  Many **Reviews**
+- One **Property**  Many **Bookings**
+- One **Property**  Many **Reviews**
+- One **Booking**  One **Payment**
+
+
+
+
+
