@@ -95,3 +95,31 @@ A successful project relies on the clear definition and execution of various tea
 - **Responsibilities:** Coordinates project tasks, manages timelines, and ensures the team stays on track. Facilitates communication among team members and monitors progress.
 - **Key Skills:** Agile/Scrum methodologies, communication, scheduling.
 
+
+
+##  Technology Stack
+
+This project utilizes a modern and scalable technology stack to simulate a full-featured booking platform like Airbnb. Below are the core technologies used and their purposes:
+
+###  Django
+- **Purpose:** A high-level Python web framework used to develop robust backend systems and RESTful APIs. It simplifies database operations, request handling, and user authentication.
+
+###  MySQL
+- **Purpose:** A relational database management system (RDBMS) used to store and manage structured data such as user accounts, listings, and booking information efficiently.
+
+###  GraphQL
+- **Purpose:** A query language for APIs that allows clients to request only the data they need. It enhances flexibility and performance in frontend-backend communication.
+
+###  Docker
+- **Purpose:** A containerization platform used to create consistent development and production environments. It ensures portability and easy deployment of the application.
+
+###  Git & GitHub
+- **Purpose:** Version control tools used for source code management and team collaboration. GitHub also hosts the repository and enables CI/CD integrations.
+
+###  GitHub Actions
+- **Purpose:** A CI/CD platform that automates workflows such as testing, building, and deployment whenever new code is pushed to the repository.
+
+###  Markdown
+- **Purpose:** A lightweight markup language used for creating project documentation files such as `README.md`, enabling clear and readable formatting.
+
+
