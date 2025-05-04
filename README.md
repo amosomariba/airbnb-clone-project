@@ -67,7 +67,7 @@ Set up automated CI/CD pipelines to ensure smooth development workflows and mini
 - **Deployment & Automation:** Docker, GitHub Actions
 - **Documentation:** Markdown
 
-## 👥 Team Roles
+##  Team Roles
 
 A successful project relies on the clear definition and execution of various team roles. Below are the primary roles involved in the Airbnb Clone Project and their responsibilities:
 
