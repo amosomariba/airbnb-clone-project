@@ -202,5 +202,39 @@ The database is designed to reflect the real-world structure of a booking platfo
 
 
 
+##  Feature Breakdown
+
+The Airbnb Clone Project includes several core features that simulate real-world functionality of a property rental platform. Each feature contributes to building a full-stack, scalable web application with real-life use cases.
+
+###  User Management
+Users can register, log in, and manage their profiles. The system supports different user roles (host or guest), enabling customized experiences based on the user type.
+
+###  Property Management
+Hosts can create, update, and delete property listings. Each property includes detailed information such as title, description, location, images, and price per night, helping users make informed booking decisions.
+
+###  Booking System
+Guests can browse available properties and make reservations by selecting check-in and check-out dates. The booking system prevents double bookings and ensures accurate availability tracking.
+
+###  Review System
+After completing a stay, guests can leave ratings and written reviews for properties. This feedback helps future guests evaluate options and promotes trust and accountability.
+
+###  Payment Integration
+Secure payment processing allows users to pay for bookings online. The system records transaction details and ensures each booking has a confirmed payment before finalizing.
+
+###  Authentication and Security
+All users are authenticated before accessing protected routes. Security measures like password hashing, token-based authentication, and data validation protect the application from common vulnerabilities.
+
+###  Admin Dashboard (Optional)
+An administrative interface allows project administrators to oversee users, properties, and bookings. This dashboard can help manage reports, disputes, or fraudulent activities efficiently.
+
+###  API Architecture
+The backend exposes a structured API (REST or GraphQL) that supports interaction between the frontend and database. The API is designed for scalability, reusability, and secure communication.
+
+###  CI/CD Pipeline Integration
+Automated workflows using GitHub Actions or similar tools handle testing, building, and deploying the application. This ensures reliable updates and maintains application integrity during development.
+
+
+
+
 
 
